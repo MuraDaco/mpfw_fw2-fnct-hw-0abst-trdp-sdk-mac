@@ -32,6 +32,8 @@
 #define HW_0_MAC_DATA_H
 
 #include <cstdint>
+#include <sys/types.h>
+#include <unistd.h>             // for getpid(), ftruncate()
 
 namespace hw0macData_ns  {
 
@@ -43,7 +45,7 @@ namespace hw0macData_ns  {
 
     typedef struct _shm_process_struct
     {
-        uint16_t pid;
+        pid_t pid;
         uint8_t  status;
     } shm_process_struct_t;
 

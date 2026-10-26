@@ -29,6 +29,7 @@ include_guard()
 
     set(${CURR_MOD_NAME}_cmmn_SOURCE_FILES_H
 
+		${${CURR_MOD_NAME}_SRC_DIR}/empty/hw0macEmpty
         ${${CURR_MOD_NAME}_SRC_DIR}/hw/hw0macData/v_${${CURR_MOD_NAME}_hw0macData_VER}
 
     )
